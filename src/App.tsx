@@ -2,6 +2,7 @@ import { useState } from "react";
 import Alert from "./components/Alert";
 import Buttons from "./components/Buttons";
 import ListGroup from "./components/ListGroup";
+import Nav from "./components/Nav";
 
 function App() {
   let biases = ['Sungyeol', 'Wonwoo', 'Woodz', 'Beomgyu'];
@@ -10,11 +11,14 @@ function App() {
     console.log(item);    
   }
 
-
   const [alertVisible, setAlertVisibility] =  useState(false)
+  const [whiteBg, setWhiteBg] =  useState('')
   
   return (
     <div className="App">
+      {/* <Nav>         */}
+      <Nav scrolled="" onScroll={() => setWhiteBg('danger')}>        
+      </Nav>
       {alertVisible && <Alert onClose={() => setAlertVisibility(false)}>
         test weh
       </Alert>}
