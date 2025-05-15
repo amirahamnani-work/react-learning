@@ -16,8 +16,9 @@ function App() {
   
   return (
     <div className="App">
+      
       {/* <Nav>         */}
-      <Nav scrolled="" onScroll={() => setWhiteBg('danger')}>        
+      <Nav scrolled="white">        
       </Nav>
       {alertVisible && <Alert onClose={() => setAlertVisibility(false)}>
         test weh

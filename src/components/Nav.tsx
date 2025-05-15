@@ -3,14 +3,14 @@ import React, { ReactNode } from 'react'
 interface NavProps {
     // children: ReactNode
     scrolled: string
-    onScroll?: () => void
+    // onScroll?: () => void
 }
 
 // const Nav = () => {
-const Nav = ({ scrolled, onScroll }: NavProps) => {
+const Nav = ({ scrolled }: NavProps) => {
   return (
-      <div className={'sticky-top text-bg-' + scrolled} onScroll={onScroll}>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary ">
+      <div className='sticky-top'>
+          <nav className="navbar navbar-expand-lg" >
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">amirah.</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
