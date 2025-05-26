@@ -9,10 +9,10 @@ interface NavProps {
 // const Nav = () => {
 const Nav = ({ scrolled }: NavProps) => {
   return (
-      <div className='sticky-top'>
-          <nav className="navbar navbar-expand-lg" >
+      <div className='sticky-top' style={{ backgroundColor: '#f8d7e9' }}>
+          <nav className="navbar navbar-expand-lg cust-navbar" >
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">amirah.</a>
+                <a className="navbar-brand text-white" href="#">amirah.</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
